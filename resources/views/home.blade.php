@@ -20,6 +20,11 @@
                 margin: 0;
             }
 
+            header{
+                padding: 2rem;
+                box-shadow: 7px 3px 5px 0px #636b6f;
+            }
+
             .full-height {
                 height: 100vh;
             }
@@ -48,7 +53,7 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            nav > a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -64,13 +69,22 @@
         </style>
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="/">{{ $home }} </a>
+                <a href="/about">{{ $about }} </a>
+                <a href="/contacts">{{ $contacts }} </a>
+            </nav>
+        </header>
         <div class="flex-center position-ref full-height">
+
 
             <div class="content">
                 <div class="title m-b-md">
                     Hello World
                 </div>
             </div>
+
         </div>
     </body>
 </html>
