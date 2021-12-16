@@ -21,3 +21,21 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/about', function () {
+    $data = [
+        "home" => 'HOME',
+        "about" => 'ABOUT',
+        "contacts" => 'CONTACTS',
+    ];
+    return view('about', $data);
+});
+
+Route::get('/contacts', function () {
+    $data = [
+        "home" => 'HOME',
+        "about" => 'ABOUT',
+        "contacts" => 'CONTACTS',
+    ];
+    return view('contacts', $data);
+});
